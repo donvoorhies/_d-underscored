@@ -1,2 +1,2 @@
-# _d-underscored
-The repository for the slight variant (or tweak) of the _s-theme, called _d (Underscored)
+# _d (Underscored)
+The repository for my slight variant (or tweak) of the _s-theme ("Underscores"), called _d ("Underscored")
