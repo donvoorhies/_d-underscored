@@ -1,5 +1,5 @@
 /*!
-CSS for the _d (Underscored)-template (2022) - this should get you started out on a good foot; now take it and run with it...!
+CSS for the _d (Underscored)-template (2022; updated 11/26/22) - this should get you started out and off on a good foot; now take it and run with it...!
 */
 body.blog,body.home,body.page-template-default,div#page{font 15px Arial, sans-serif, serif; background:#FFF;color:#000;width:100%;max-width:95%;margin:0 auto}
 main,footer{width:100%;max-width:100%;margin:0 auto;border-bottom:solid 1px #ccc; margin:12px auto 12px auto}
@@ -12,27 +12,29 @@ a,a:active,a:link,a:visited{text-decoration:none;color:#000}
 a:hover{text-decoration:underline;color:#000}
 article.page,article.post,footer#colophon,header#masthead{margin:0 auto}
 article.post a,article.page a{text-decoration:underline}
-article.post a:hover,article.page a:hover,div.site-info a:hover{text-decoration:none;color:#3c40c6}
+article.post a:hover, article.page a:hover, div.site-info a:hover{text-decoration:none;color:#3c40c6}
 article.post{margin: 0 0 32px 0}
 article.post:last-child{margin-bottom:0}
 footer.entry-footer{width:100%;border-bottom:none;margin:33px auto}
 h2.entry-title:first-child{border-top:none}
-figure.wp-block-image img{width:1166px;height:auto;max-width:100%; }
+figure.wp-block-image img{width:1166px}
 button.menu-toggle{border:1px solid #000;width:45px;font-size:40px;font-weight:600;padding:0;background:#fff;float:right;margin-bottom:27px}
-audio,iframe,img,input,video{width:100%;max-width:100%}img,video{height:auto}
 
-/*Elastic videos: https://webdesignerwall.com/tutorials/css-elastic-videos - remember to encapsulate your YT-iframe tags with elements using the following selectors */
-.video-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}
-.video-container embed,.video-container iframe,.video-container object{position:absolute;top:0;left:0;width:100%;height:100%}
+/*For responsive media-content that also maintains it's aspect-ratio */
+audio,iframe,input,video{width:100%;max-width:100%}
+img,video{height:auto}
+/*Add the img-tag to the selector, if you think 16/9-ratioed images ROCK! */
+iframe,video{aspect-ratio:16/9;border:0}
 
-/*This is if you want to remove the RECAPTCHA-icon certain mail-plugins insert (for example Contact Form 7); remove/comment if not neccessary */
+
+/*This secelector below is if you want to remove the RECAPTCHA-icon certain mail-plugins insert (for example Contact Form 7); remove/comment if not neccessary */
+
 .grecaptcha-badge {visibility: hidden} 
 
 figure.wp-block-image figcaption {font-size:15px; text-align:center}
 div.site-info{font-size:11px;text-align:center}
 p img{width:16px; height: auto}
 article#post-18 header.entry-header h1.entry-title{display:none}
-
 /*Uncomment selector below, if you want comments to be left*/
 /*span.comments-link{display:none}*/
 
