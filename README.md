@@ -6,4 +6,4 @@ Insert (Copy&Paste) the posted CSS in the theme's "Appearance"-section -> "Custo
 Regarding the markdown-file at: https://github.com/donvoorhies/_d-underscored/blob/main/4header_php.md - view the file to see the alterations and the code needed to be done with the "headers.php"-file...
 
 Also add:<b><i>"&lt;div class="push"&gt;&lt;/div&gt;"</i></b> just before the </main>-tag on the following pages:
-"index.php", "page.php", "search.php" and "single.php" - for the implementing a sticky-footer on this theme.
+"<i>index.php</i>", "<i>page.php</i>", "<i>search.php</i>" and "<i>single.php</i>" - for the implementing a sticky-footer on this theme.
