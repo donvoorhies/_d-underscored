@@ -1,5 +1,5 @@
 /*!
-CSS for the _d (Underscored)-template (2022; updated 11/26/22) - this should get you started out and off on a good foot; now take it and run with it...!
+CSS for the _d (Underscored)-template (2022; updated 11/07/24) - this should get you started out and off on a good foot; now take the css and run with it...!
 */
 body.blog,body.home,body.page-template-default,div#page{font 15px Arial, sans-serif, serif; background:#FFF;color:#000;width:100%;max-width:95%;margin:0 auto}
 main,footer{width:100%;max-width:100%;margin:0 auto;border-bottom:solid 1px #ccc; margin:12px auto 12px auto}
@@ -48,4 +48,57 @@ ul#primary-menu{border-bottom:0 none; padding:0}
 ul#primary-menu li.menu-item{height:45px;padding:15px,0;float:clear}
 figure.wp-block-image figcaption {font-size:0.9em; text-align:center}
 div.site-info{font-size:0.66em;text-align:center}
+}
+
+html{-ms-text-size-adjust: 100%;-webkit-text-size-adjust:100%}
+html,body.*{height:100%;margin:0}
+main#primary.site-main{min-height:100%;margin-bottom:-24px}footer,.push{height:24px;line-height:24px}
+body.blog,body.home,body.page-template-default,div#page{font 15px Arial, sans-serif, serif; background:#FFF;color:#000;width:100%;max-width:95%;margin:0 auto}
+main,footer{width:100%;max-width:100%;margin:0 auto;border-bottom:solid 1px #ccc; margin:12px auto 12px auto}
+ul#primary-menu{border-bottom: solid 1px #ccc; padding:0 0 21px 0}
+ul#primary-menu li.menu-item a{margin-right:15px}
+div.site-branding p.site-title a{font-size:27px;font-weight:600}
+article#post-26 h1.entry-title{display:none}
+article h1.entry-title,h2.entry-title a{font-size:24px;font-weight:600}
+a,a:active,a:link,a:visited{text-decoration:none;color:#000}
+a:hover{text-decoration:underline;color:#000}
+article.page,article.post,footer#colophon,header#masthead{margin:0 auto}
+article.post a,article.page a{text-decoration:underline}
+article.post a:hover, article.page a:hover, div.site-info a:hover{text-decoration:none;color:#3c40c6}
+article.post{margin: 0 0 32px 0}
+article.post:last-child{margin-bottom:0}
+footer.entry-footer{width:100%;border-bottom:none;margin:33px auto}
+h2.entry-title:first-child{border-top:none}
+figure.wp-block-image img{width:1166px}
+button.menu-toggle{border:1px solid #000;width:45px;font-size:40px;font-weight:600;padding:0;background:#fff;float:right;margin-bottom:27px}
+
+/*For responsive media-content that also maintains it's aspect-ratio */
+audio,iframe,input,video{width:100%;max-width:100%}img,video{height:auto}
+iframe,video,img{aspect-ratio:16/9;border:0}
+figure.linx img{aspect-ratio:auto;border:0}
+
+/*This secelector below is if you want to remove the RECAPTCHA-icon certain mail-plugins insert (for example Contact Form 7); remove/comment if not neccessary */
+.grecaptcha-badge {visibility: hidden} 
+
+figure.wp-block-image figcaption {font-size:15px; text-align:center}
+div.site-info{font-size:11px;text-align:center}
+p img{width:16px; height: auto}
+article#post-18 header.entry-header h1.entry-title{display:none}
+/*Uncomment selector below, if you want comments to be left*/
+/*span.comments-link{display:none}*/
+
+/*Now, let's go handheld...*/ 
+@media only screen and (max-width:480px){
+main{width:100%;border-bottom:none}
+article.post,article.page{width:100%;max-width:100%;margin:0 auto}
+p.site-title,article{border-bottom:solid 1px #ccc; margin:0 0 12px 0}
+h1.entry-title,h2.entry-title:first-child{border-top:solid 1px #ccc; margin:0 0 12px 0}
+ul#primary-menu{border-bottom:0 none; padding:0}
+ul#primary-menu li.menu-item{width:100px;height:45px;padding:15px,0;float:clear;z-index: 2000}
+figure.wp-block-image figcaption {font-size:0.9em; text-align:center}
+div.site-info{font-size:1.2vh;text-align:center}
+button.menu-toggle{z-index:2000}
+.email{display:inline-block;
+font-family:Arial,sans-serif;font-size:15px;color: #000;text-decoration:none}
+div.site-info{position:absolute;margin-bottom:0;}
 }
